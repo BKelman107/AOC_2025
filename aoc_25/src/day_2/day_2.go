@@ -16,6 +16,7 @@ func main() {
 	elements := strings.Split(string(data), ",")
 	limit := elements
 	invalid_ids := 0
+
 	for _, elem := range limit {
 
 		// fmt.Println(elem)
@@ -39,9 +40,11 @@ func main() {
 			} else {
 				continue
 			}
+		}
+
+		for j := start; j < end+1; j++ {
 
 		}
 	}
 	fmt.Println("Sum of invalid IDs=", invalid_ids)
-
 }
